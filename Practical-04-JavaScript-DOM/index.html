@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 4 - JavaScript DOM Manipulation &amp; Interactivity</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Header with Theme Switcher & Hamburger -->
+  <header>
+    <h1>StudentHub Interactivity</h1>
+
+    <!-- Hamburger icon for mobile -->
+    <button id="hamburger-btn" class="hamburger" aria-label="Toggle menu">&#9776;</button>
+
+    <div id="nav-menu" class="nav-menu">
+      <a href="#slider-section">Announcements</a>
+      <a href="#faq-section">FAQ</a>
+      <a href="#modal-section">Modal Popup</a>
+    </div>
+
+    <!-- Theme Switcher Button -->
+    <button id="theme-btn" class="btn" style="background: #ffcc00; color: #002244; font-weight: bold;">🌙 Dark Mode</button>
+  </header>
+
+  <div class="container">
+
+    <!-- 1. Notification Banner with Close Button -->
+    <div id="notification-banner" class="notification-banner">
+      <span>📢 <strong>Notice:</strong> Registrations for the Smart Campus Hackathon 2026 are now open!</span>
+      <button id="close-banner-btn" class="close-banner-btn">&times;</button>
+    </div>
+
+    <!-- 2. Content Slider / Carousel -->
+    <div class="card" id="slider-section">
+      <h2 style="color: #003366; margin-top: 0;">Campus Highlights Slider</h2>
+      <div class="slider-box">
+        <div class="slide active">
+          <h3>🏆 Smart Campus Hackathon 2026</h3>
+          <p>Compete with 40+ engineering teams to build software solutions. Cash prizes up to ₹50,000.</p>
+        </div>
+        <div class="slide">
+          <h3>💻 Full Stack Web Development Workshop</h3>
+          <p>Learn how to connect frontend HTML/CSS/JS with PHP and MySQL database.</p>
+        </div>
+        <div class="slide">
+          <h3>🤖 AI &amp; Robotics Seminar</h3>
+          <p>Invited guest lecture by industry specialists on machine learning and automation.</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="prev-btn" class="slider-btn">&laquo; Previous</button>
+        <button id="next-btn" class="slider-btn">Next &raquo;</button>
+      </div>
+    </div>
+
+    <!-- 3. Modal Popup Trigger -->
+    <div class="card" id="modal-section">
+      <h2 style="color: #003366; margin-top: 0;">Event Details (Modal Popup Demo)</h2>
+      <p>Click the button below to view event registration guidelines inside a popup modal:</p>
+      <button id="open-modal-btn" class="btn">View Hackathon Rules (Modal)</button>
+    </div>
+
+    <!-- 4. Collapsible FAQ Accordion -->
+    <div class="card" id="faq-section">
+      <h2 style="color: #003366; margin-top: 0;">Frequently Asked Questions (Accordion)</h2>
+
+      <div>
+        <button class="accordion-header">1. Who can participate in the hackathon? <span>+</span></button>
+        <div class="accordion-content">
+          Any currently enrolled engineering student of CHARUSAT FTE from IT, CSE, CE, or EC can participate.
+        </div>
+      </div>
+
+      <div>
+        <button class="accordion-header">2. How does the theme switcher work? <span>+</span></button>
+        <div class="accordion-content">
+          JavaScript toggles the <code>.dark-mode</code> class on the <code>&lt;body&gt;</code> element and saves the choice in the browser's <code>localStorage</code> so it stays remembered on page refresh.
+        </div>
+      </div>
+
+      <div>
+        <button class="accordion-header">3. Are participation certificates provided? <span>+</span></button>
+        <div class="accordion-content">
+          Yes, all attendees receive an official digital participation certificate verified by the FTE coordinator.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal Popup Box -->
+  <div id="event-modal" class="modal-overlay">
+    <div class="modal-content">
+      <h3 style="margin-top: 0; color: #003366;">Smart Campus Hackathon Rules</h3>
+      <ul style="font-size: 14px; line-height: 1.6; padding-left: 20px;">
+        <li>Teams must consist of 2 to 4 students.</li>
+        <li>Projects must be original work created during the 48-hour period.</li>
+        <li>Bring your university ID card for physical lab entry.</li>
+      </ul>
+      <div style="text-align: right; margin-top: 20px;">
+        <button id="close-modal-btn" class="btn" style="background: #cc0000;">Close Modal</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
