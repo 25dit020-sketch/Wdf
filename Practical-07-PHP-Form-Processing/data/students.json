@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-10-21 10:15:00",
+    "fullName": "Aarav Sharma",
+    "rollNo": "23IT001",
+    "email": "aarav.it@charusat.edu.in",
+    "department": "Information Technology",
+    "semester": "3",
+    "remarks": "Web Development enthusiast"
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-10-21 11:30:00",
+    "fullName": "Diya Patel",
+    "rollNo": "23CE014",
+    "email": "diya.ce@charusat.edu.in",
+    "department": "Computer Engineering",
+    "semester": "3",
+    "remarks": "Interested in Cyber Security"
+  }
+]
