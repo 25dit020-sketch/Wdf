@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+  <rect width="300" height="180" fill="#003366"/>
+  <circle cx="150" cy="70" r="35" fill="#ffcc00"/>
+  <polygon points="150,45 160,65 180,68 165,82 170,102 150,90 130,102 135,82 120,68 140,65" fill="#003366"/>
+  <text x="150" y="140" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">StudentHub Event</text>
+</svg>
