@@ -1,0 +1,158 @@
+/* Practical 15: Final Integration Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 0;
+  color: #d0e1fd;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Environment Diagnostics Banner */
+.diagnostics-banner {
+  background: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #28a745;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.diagnostics-banner h3 {
+  margin: 0 0 5px 0;
+  color: #003366;
+  font-size: 16px;
+}
+
+.diag-item {
+  font-size: 13px;
+  color: #555;
+}
+
+.diag-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.badge-green { background: #d4edda; color: #155724; }
+.badge-red { background: #f8d7da; color: #721c24; }
+.badge-blue { background: #cce5ff; color: #004085; }
+
+/* Practicals Master Grid */
+.practicals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.practical-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.practical-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+.practical-num {
+  font-size: 12px;
+  font-weight: bold;
+  color: #003366;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.practical-title {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  color: #003366;
+}
+
+.practical-desc {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.tech-tag {
+  background: #eef4f8;
+  color: #003366;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn-launch {
+  display: inline-block;
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 9px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-launch:hover {
+  background-color: #002244;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  color: #777;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  background: white;
+}
