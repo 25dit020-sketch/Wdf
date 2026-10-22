@@ -1,0 +1,148 @@
+/* Basic beginner stylesheet for Practical 2 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 15px 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: #d0e0ff;
+}
+
+nav {
+  background-color: #002244;
+  padding: 10px 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover, nav a.active {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  color: #666;
+  margin: 15px 25px;
+}
+
+.breadcrumb a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+main {
+  padding: 10px 25px 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section, article {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+h2 {
+  color: #003366;
+  margin-top: 0;
+}
+
+h3 {
+  color: #004080;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button, .btn {
+  background-color: #003366;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+button:hover, .btn:hover {
+  background-color: #002244;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #e6f0fa;
+}
+
+footer {
+  background-color: #222222;
+  color: #cccccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  margin-top: 30px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudentHub - Register (Practical 2)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CHARUSAT StudentHub</h1>
+    <p>Faculty of Technology and Engineering (FTE)</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="register.html" class="active">Register</a>
+    <a href="login.html">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+    <a href="faq.html">FAQ</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Student Registration</span>
+  </div>
+
+  <main>
+    <section>
+      <h2>New Student Registration</h2>
+      <p>Fill out the form below to register your student account.</p>
+
+      <form action="login.html" method="get">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="fullname" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">College Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="e.g. 24it001@charusat.edu.in">
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" required placeholder="10-digit mobile number">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required placeholder="At least 8 characters">
+        </div>
+
+        <div class="form-group">
+          <label for="course">Branch / Department:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select Branch --</option>
+            <option value="IT">Information Technology (IT)</option>
+            <option value="CSE">Computer Science &amp; Engineering (CSE)</option>
+            <option value="CE">Computer Engineering (CE)</option>
+            <option value="EC">Electronics &amp; Communication (EC)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Academic Year:</label>
+          <input type="radio" id="year1" name="year" value="1"> <label for="year1" style="display:inline; font-weight:normal;">1st Year</label> &nbsp;
+          <input type="radio" id="year2" name="year" value="2"> <label for="year2" style="display:inline; font-weight:normal;">2nd Year</label> &nbsp;
+          <input type="radio" id="year3" name="year" value="3" checked> <label for="year3" style="display:inline; font-weight:normal;">3rd Year</label> &nbsp;
+          <input type="radio" id="year4" name="year" value="4"> <label for="year4" style="display:inline; font-weight:normal;">4th Year</label>
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+          <input type="radio" id="g-male" name="gender" value="Male" checked> <label for="g-male" style="display:inline; font-weight:normal;">Male</label> &nbsp;
+          <input type="radio" id="g-female" name="gender" value="Female"> <label for="g-female" style="display:inline; font-weight:normal;">Female</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms" style="display:inline; font-weight:normal;">I accept the terms and student portal rules.</label>
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT FTE.</p>
+  </footer>
+
+</body>
+</html>

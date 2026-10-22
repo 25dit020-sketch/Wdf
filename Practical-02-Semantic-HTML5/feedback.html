@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudentHub - Feedback (Practical 2)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CHARUSAT StudentHub</h1>
+    <p>Faculty of Technology and Engineering (FTE)</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+    <a href="faq.html">FAQ</a>
+    <a href="feedback.html" class="active">Feedback</a>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>Feedback</span>
+  </div>
+
+  <main>
+    <section style="max-width: 500px; margin: auto;">
+      <h2>Portal Feedback</h2>
+      <p>Give us your feedback to improve the student portal.</p>
+
+      <form action="feedback.html" method="get">
+        <div class="form-group">
+          <label for="fb-name">Your Name:</label>
+          <input type="text" id="fb-name" name="name" required placeholder="Enter name">
+        </div>
+
+        <div class="form-group">
+          <label for="fb-role">Your Role:</label>
+          <select id="fb-role" name="role">
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="visitor">Visitor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Portal Rating:</label>
+          <input type="radio" id="r5" name="rating" value="5" checked> <label for="r5" style="display:inline; font-weight:normal;">5 (Excellent)</label> &nbsp;
+          <input type="radio" id="r4" name="rating" value="4"> <label for="r4" style="display:inline; font-weight:normal;">4 (Good)</label> &nbsp;
+          <input type="radio" id="r3" name="rating" value="3"> <label for="r3" style="display:inline; font-weight:normal;">3 (Average)</label>
+        </div>
+
+        <div class="form-group">
+          <label for="fb-msg">Suggestions:</label>
+          <textarea id="fb-msg" name="suggestions" rows="3" placeholder="Tell us what can be improved..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT FTE.</p>
+  </footer>
+
+</body>
+</html>

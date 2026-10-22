@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudentHub - Login (Practical 2)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CHARUSAT StudentHub</h1>
+    <p>Faculty of Technology and Engineering (FTE)</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+    <a href="login.html" class="active">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+    <a href="admin.html">Admin</a>
+    <a href="faq.html">FAQ</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> &gt; <span>User Login</span>
+  </div>
+
+  <main>
+    <section style="max-width: 450px; margin: auto;">
+      <h2>Portal Login</h2>
+      <p>Enter your student or admin credentials to sign in.</p>
+
+      <form action="dashboard.html" method="get">
+        <div class="form-group">
+          <label for="username">Email or Enrollment No:</label>
+          <input type="text" id="username" name="username" required placeholder="e.g. 24it001@charusat.edu.in">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required placeholder="Enter password">
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="remember" name="remember">
+          <label for="remember" style="display:inline; font-weight:normal;">Remember Me</label>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT FTE.</p>
+  </footer>
+
+</body>
+</html>
