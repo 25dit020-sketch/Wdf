@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudentHub - Low-Fidelity Wireframes (Practical 1)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #eaedf1; color: #333; }
+    h1 { text-align: center; color: #003366; }
+    .intro { text-align: center; margin-bottom: 30px; color: #555; }
+    .wireframe-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .wireframe-box { background: white; border: 2px dashed #999; width: 340px; padding: 15px; border-radius: 6px; box-sizing: border-box; }
+    .wireframe-box h3 { margin-top: 0; color: #003366; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+    
+    /* Wireframe mock elements */
+    .wf-bar { background: #d0d7de; height: 25px; margin: 8px 0; border-radius: 3px; }
+    .wf-hero { background: #b0c4de; height: 60px; margin: 10px 0; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: bold; color: #222; }
+    .wf-grid { display: flex; gap: 8px; margin: 10px 0; }
+    .wf-card { flex: 1; background: #e6ebf0; height: 70px; border: 1px solid #bbb; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center; }
+    .wf-input { background: #fafafa; border: 1px solid #ccc; height: 22px; margin: 6px 0; border-radius: 3px; }
+    .wf-btn { background: #0066cc; color: white; height: 26px; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>StudentHub Portal - Low-Fidelity Wireframes</h1>
+  <p class="intro">Simple block diagrams showing the planned page layouts for student and admin modules.</p>
+
+  <div class="wireframe-container">
+
+    <!-- 1. Home Wireframe -->
+    <div class="wireframe-box">
+      <h3>1. Home Page (index.html)</h3>
+      <div class="wf-bar" style="background: #003366; color: white; font-size: 11px; display: flex; align-items: center; padding-left: 5px;">[Header &amp; Navigation Menu]</div>
+      <div class="wf-hero">[Hero Banner: Welcome to StudentHub]</div>
+      <div style="font-size: 12px; font-weight: bold; margin-top: 5px;">Featured Events:</div>
+      <div class="wf-grid">
+        <div class="wf-card">Event 1<br>(Hackathon)</div>
+        <div class="wf-card">Event 2<br>(Workshop)</div>
+      </div>
+      <div class="wf-bar" style="font-size: 10px; display: flex; align-items: center; justify-content: center;">[Footer &copy; CHARUSAT FTE]</div>
+    </div>
+
+    <!-- 2. Registration Wireframe -->
+    <div class="wireframe-box">
+      <h3>2. Registration (register.html)</h3>
+      <div class="wf-bar" style="background: #003366; color: white; font-size: 11px; display: flex; align-items: center; padding-left: 5px;">[Header &amp; Nav]</div>
+      <div style="padding: 5px; border: 1px solid #ddd; margin-top: 8px;">
+        <div style="font-size: 11px;">Full Name:</div>
+        <div class="wf-input"></div>
+        <div style="font-size: 11px;">Email Address:</div>
+        <div class="wf-input"></div>
+        <div style="font-size: 11px;">Password:</div>
+        <div class="wf-input"></div>
+        <div style="font-size: 11px;">Department: [Select Dropdown]</div>
+        <div class="wf-btn">Submit Registration</div>
+      </div>
+      <div class="wf-bar" style="font-size: 10px; margin-top: 8px; display: flex; align-items: center; justify-content: center;">[Footer]</div>
+    </div>
+
+    <!-- 3. Login Wireframe -->
+    <div class="wireframe-box">
+      <h3>3. Login Page (login.html)</h3>
+      <div class="wf-bar" style="background: #003366; color: white; font-size: 11px; display: flex; align-items: center; padding-left: 5px;">[Header &amp; Nav]</div>
+      <div style="padding: 15px; border: 1px solid #ddd; margin: 15px 0;">
+        <div style="font-size: 11px;">Email / Username:</div>
+        <div class="wf-input"></div>
+        <div style="font-size: 11px;">Password:</div>
+        <div class="wf-input"></div>
+        <div style="font-size: 11px; margin-top: 5px;">[ ] Remember Me</div>
+        <div class="wf-btn">Sign In</div>
+      </div>
+      <div class="wf-bar" style="font-size: 10px; display: flex; align-items: center; justify-content: center;">[Footer]</div>
+    </div>
+
+    <!-- 4. Student Dashboard Wireframe -->
+    <div class="wireframe-box">
+      <h3>4. Student Dashboard (dashboard.html)</h3>
+      <div class="wf-bar" style="background: #003366; color: white; font-size: 11px; display: flex; align-items: center; padding-left: 5px;">[Welcome, Student | Logout]</div>
+      <div class="wf-hero" style="background: #e2f0d9; height: 40px;">Welcome Back: Aarav Patel (24IT001)</div>
+      <div class="wf-grid">
+        <div class="wf-card">Enrolled Events: 3</div>
+        <div class="wf-card">Attendance: 88%</div>
+      </div>
+      <div style="font-size: 11px; border: 1px solid #ccc; padding: 5px; margin: 5px 0;">
+        <strong>Registered Events Table:</strong><br>
+        - Smart Campus Hackathon<br>
+        - Web Development Workshop
+      </div>
+      <div class="wf-bar" style="font-size: 10px; display: flex; align-items: center; justify-content: center;">[Footer]</div>
+    </div>
+
+    <!-- 5. Events Catalog Wireframe -->
+    <div class="wireframe-box">
+      <h3>5. Events Page (events.html)</h3>
+      <div class="wf-bar" style="background: #003366; color: white; font-size: 11px; display: flex; align-items: center; padding-left: 5px;">[Header &amp; Nav]</div>
+      <div class="wf-input" style="font-size: 11px; color: #888; padding: 2px;">[Search by title...]</div>
+      <div class="wf-card" style="margin-bottom: 6px; height: 50px;">Event #1: Hackathon 2026<br>[Register Button]</div>
+      <div class="wf-card" style="margin-bottom: 6px; height: 50px;">Event #2: Cloud Workshop<br>[Register Button]</div>
+      <div class="wf-card" style="height: 50px;">Event #3: Robotics Seminar<br>[Register Button]</div>
+      <div class="wf-bar" style="font-size: 10px; margin-top: 8px; display: flex; align-items: center; justify-content: center;">[Footer]</div>
+    </div>
+
+    <!-- 6. Admin Panel Wireframe -->
+    <div class="wireframe-box">
+      <h3>6. Admin Dashboard (admin.html)</h3>
+      <div class="wf-bar" style="background: #cc0000; color: white; font-size: 11px; display: flex; align-items: center; padding-left: 5px;">[Admin Panel | Logout]</div>
+      <div class="wf-grid">
+        <div class="wf-card">Students: 1,200</div>
+        <div class="wf-card">Events: 15</div>
+      </div>
+      <div style="font-size: 11px; border: 1px solid #ccc; padding: 5px; margin: 5px 0;">
+        <strong>Quick Actions:</strong><br>
+        [+ Add New Student] [+ Create Event]
+      </div>
+      <div class="wf-bar" style="font-size: 10px; display: flex; align-items: center; justify-content: center;">[Footer]</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
