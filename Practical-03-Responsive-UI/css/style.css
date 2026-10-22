@@ -1,0 +1,253 @@
+/* Practical 3: Responsive Design using CSS Grid & Flexbox (Beginner Style) */
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* 1. Header & Navigation using Flexbox */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 15px 20px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+header p {
+  font-size: 13px;
+  color: #cce0ff;
+}
+
+nav {
+  background-color: #002244;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+  background-color: #ffcc00;
+  color: #002244;
+  font-weight: bold;
+}
+
+/* 2. Container */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* 3. Hero Banner */
+.hero {
+  background: #004080;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #002244;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #003366;
+}
+
+/* 4. CSS Grid for Dashboard summary cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 26px;
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* 5. CSS Grid for Event Cards Catalog */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.event-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card h3 {
+  font-size: 16px;
+  color: #003366;
+  margin-bottom: 8px;
+}
+
+.badge {
+  background-color: #e6f0fa;
+  color: #004080;
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  width: fit-content;
+}
+
+.card-box {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+th {
+  background-color: #f0f4f8;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+/* 6. Media Queries for Mobile Responsiveness (Screen size < 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+}

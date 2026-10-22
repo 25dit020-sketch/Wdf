@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Responsive Dashboard (Practical 3)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CHARUSAT StudentHub</h1>
+    <p>Faculty of Technology and Engineering</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+  </nav>
+
+  <div class="container">
+    <div class="card-box" style="background:#e8f0fe;">
+      <h2>Welcome Back, Aarav Patel</h2>
+      <p>Enrollment: <strong>24IT001</strong> | Semester: <strong>3rd</strong> | Department: <strong>Information Technology</strong></p>
+    </div>
+
+    <!-- Responsive Grid -->
+    <div class="stats-grid">
+      <div class="stat-box">
+        <h3>2</h3>
+        <p>Enrolled Events</p>
+      </div>
+      <div class="stat-box">
+        <h3>89%</h3>
+        <p>Attendance</p>
+      </div>
+      <div class="stat-box">
+        <h3>1</h3>
+        <p>Certificate Earned</p>
+      </div>
+    </div>
+
+    <div class="card-box">
+      <h3>My Enrolled Events</h3>
+      <div style="overflow-x: auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Event Name</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Venue</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Smart Campus Hackathon 2026</td>
+              <td>Hackathon</td>
+              <td>15-Nov-2026</td>
+              <td>Lab Complex C</td>
+              <td><span class="badge" style="background:#d4edda; color:#155724;">Confirmed</span></td>
+            </tr>
+            <tr>
+              <td>Web Dev with PHP &amp; MySQL</td>
+              <td>Workshop</td>
+              <td>22-Nov-2026</td>
+              <td>FTE Auditorium</td>
+              <td><span class="badge" style="background:#d4edda; color:#155724;">Confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT FTE.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Responsive Home (Practical 3)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CHARUSAT StudentHub</h1>
+    <p>Faculty of Technology and Engineering</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h2>Welcome to StudentHub Portal</h2>
+      <p>Responsive design using CSS Flexbox for navigation and CSS Grid for layout cards.</p>
+      <div class="btn-group">
+        <a href="register.html" class="btn">Register Now</a>
+        <a href="events.html" class="btn btn-secondary">Browse Events</a>
+      </div>
+    </div>
+
+    <!-- Summary Stats using CSS Grid -->
+    <div class="stats-grid">
+      <div class="stat-box">
+        <h3>1,200+</h3>
+        <p>Active Students</p>
+      </div>
+      <div class="stat-box">
+        <h3>15</h3>
+        <p>Upcoming Events</p>
+      </div>
+      <div class="stat-box">
+        <h3>4</h3>
+        <p>Engineering Branches</p>
+      </div>
+    </div>
+
+    <div class="card-box">
+      <h2>Featured Campus Workshops</h2>
+      <p>These event cards adapt into a 3-column grid on laptops and stack into 1 column on smartphones:</p>
+
+      <div class="events-grid">
+        <div class="event-card">
+          <div>
+            <span class="badge">Hackathon</span>
+            <h3>Smart Campus Hackathon</h3>
+            <p style="font-size: 13px; color: #555;">Build smart IoT and software projects in a 2-day campus hackathon.</p>
+          </div>
+          <a href="events.html" class="btn" style="text-align: center; margin-top: 10px;">Details</a>
+        </div>
+
+        <div class="event-card">
+          <div>
+            <span class="badge">Workshop</span>
+            <h3>Web Dev with PHP &amp; MySQL</h3>
+            <p style="font-size: 13px; color: #555;">Learn backend development and database connectivity hands-on.</p>
+          </div>
+          <a href="events.html" class="btn" style="text-align: center; margin-top: 10px;">Details</a>
+        </div>
+
+        <div class="event-card">
+          <div>
+            <span class="badge">Seminar</span>
+            <h3>AI and Robotics Trends</h3>
+            <p style="font-size: 13px; color: #555;">Expert talk on practical machine learning applications.</p>
+          </div>
+          <a href="events.html" class="btn" style="text-align: center; margin-top: 10px;">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 CHARUSAT FTE - Practical 3 Responsive Design</p>
+  </footer>
+
+</body>
+</html>
