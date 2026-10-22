@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 13 - Asynchronous REST API &amp; Fetch CRUD | StudentHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="header-bar">
+      <div>
+        <h2>Campus Events (REST API &amp; AJAX Fetch)</h2>
+        <span style="font-size: 13px; color: #666;" id="eventCount">Loading events...</span>
+      </div>
+      <div>
+        <button id="btnOpenAddModal" class="btn btn-primary">+ Add Event (AJAX)</button>
+      </div>
+    </div>
+
+    <!-- Real-time Toast Banner -->
+    <div id="toastMessage"></div>
+
+    <!-- Search Input -->
+    <div style="margin-bottom: 20px;">
+      <input type="text" id="searchInput" placeholder="Filter events live by title or keyword..." style="width:100%; padding:9px 12px; border:1px solid #ccc; border-radius:4px; font-size:14px; box-sizing:border-box;">
+    </div>
+
+    <!-- Dynamic Events Grid -->
+    <div id="eventsContainer" class="cards-grid"></div>
+
+    <!-- Modal Form (For Create & Update) -->
+    <div id="eventModal" class="modal-overlay">
+      <div class="modal-box">
+        <h3 id="modalTitle" style="color:#003366; margin-top:0;">Add Campus Event</h3>
+        
+        <form id="eventForm">
+          <input type="hidden" id="eventId" value="">
+
+          <div class="form-group">
+            <label for="eventTitle">Event Title *</label>
+            <input type="text" id="eventTitle" required>
+          </div>
+
+          <div class="form-group">
+            <label for="eventCategory">Category *</label>
+            <select id="eventCategory" required>
+              <option value="Technical">Technical</option>
+              <option value="Cultural">Cultural</option>
+              <option value="Workshop">Workshop</option>
+              <option value="Sports">Sports</option>
+              <option value="Seminar">Seminar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDesc">Description *</label>
+            <textarea id="eventDesc" required></textarea>
+          </div>
+
+          <div style="display:flex; gap:10px;">
+            <div class="form-group" style="flex:1;">
+              <label for="eventDate">Date *</label>
+              <input type="date" id="eventDate" required>
+            </div>
+            <div class="form-group" style="flex:1;">
+              <label for="eventSeats">Seats *</label>
+              <input type="number" id="eventSeats" min="5" max="1000" value="100" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="eventVenue">Venue *</label>
+            <input type="text" id="eventVenue" required>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:15px;">
+            <button type="button" id="btnCancelModal" class="btn btn-cancel">Cancel</button>
+            <button type="submit" id="btnSaveEvent" class="btn btn-primary">Save Event</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div style="margin-top: 30px; font-size: 13px;">
+      <a href="../Practical-10-Secure-Auth-Sessions/admin_dashboard.php" style="color:#003366; text-decoration:none;">&larr; Return to Admin Dashboard</a>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
