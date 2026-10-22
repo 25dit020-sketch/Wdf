@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Hackathon 2026",
+    "category": "Technical",
+    "date": "2026-11-15",
+    "venue": "Lab 101, Computer Dept",
+    "seats": 120,
+    "description": "24-hour coding sprint solving real-world campus problems with modern frameworks."
+  },
+  {
+    "id": 2,
+    "title": "Annual Cultural Fest - Spandan",
+    "category": "Cultural",
+    "date": "2026-12-05",
+    "venue": "University Auditorium",
+    "seats": 500,
+    "description": "Showcase of music, dance, drama, and regional heritage across all institutes."
+  },
+  {
+    "id": 3,
+    "title": "AI & Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-11-20",
+    "venue": "Seminar Hall A",
+    "seats": 80,
+    "description": "Hands-on masterclass building intelligent web applications using modern APIs."
+  },
+  {
+    "id": 4,
+    "title": "Inter-College Cricket Tournament",
+    "category": "Sports",
+    "date": "2026-12-10",
+    "venue": "University Sports Ground",
+    "seats": 200,
+    "description": "Annual 10-over cricket championship between engineering departments."
+  },
+  {
+    "id": 5,
+    "title": "Cloud Computing Seminar",
+    "category": "Technical",
+    "date": "2026-11-25",
+    "venue": "Auditorium 2",
+    "seats": 150,
+    "description": "Guest lecture by industry cloud architects on AWS, GCP, and Docker containers."
+  },
+  {
+    "id": 6,
+    "title": "Photography & Film Club Exhibition",
+    "category": "Cultural",
+    "date": "2026-12-12",
+    "venue": "Central Library Foyer",
+    "seats": 90,
+    "description": "Student photography exhibition capturing campus life and nature."
+  },
+  {
+    "id": 7,
+    "title": "Web Security & Ethical Hacking",
+    "category": "Workshop",
+    "date": "2026-11-28",
+    "venue": "Networking Lab 204",
+    "seats": 60,
+    "description": "Learn SQL injection prevention, XSS mitigation, and safe web coding practices."
+  },
+  {
+    "id": 8,
+    "title": "Badminton Singles & Doubles",
+    "category": "Sports",
+    "date": "2026-12-18",
+    "venue": "Indoor Sports Complex",
+    "seats": 40,
+    "description": "Knockout badminton championship for all registered undergraduate students."
+  },
+  {
+    "id": 9,
+    "title": "Data Science with Python",
+    "category": "Technical",
+    "date": "2026-12-02",
+    "venue": "Lab 103, IT Dept",
+    "seats": 75,
+    "description": "Beginner friendly practical sessions on Pandas, NumPy, and basic ML algorithms."
+  },
+  {
+    "id": 10,
+    "title": "Startup Pitch Competition",
+    "category": "Workshop",
+    "date": "2026-12-22",
+    "venue": "Incubation Center",
+    "seats": 100,
+    "description": "Pitch your tech startup idea to angel investors and faculty mentors."
+  }
+]

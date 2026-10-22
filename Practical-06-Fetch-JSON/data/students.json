@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "roll_no": "23IT001",
+    "department": "IT",
+    "email": "aarav.it@charusat.edu.in",
+    "cgpa": 8.75
+  },
+  {
+    "id": 2,
+    "name": "Diya Patel",
+    "roll_no": "23CE014",
+    "department": "CE",
+    "email": "diya.ce@charusat.edu.in",
+    "cgpa": 9.10
+  },
+  {
+    "id": 3,
+    "name": "Rohan Mehta",
+    "roll_no": "23IT035",
+    "department": "IT",
+    "email": "rohan.it@charusat.edu.in",
+    "cgpa": 7.80
+  },
+  {
+    "id": 4,
+    "name": "Ananya Joshi",
+    "roll_no": "23CSE022",
+    "department": "CSE",
+    "email": "ananya.cse@charusat.edu.in",
+    "cgpa": 9.45
+  },
+  {
+    "id": 5,
+    "name": "Kavya Desai",
+    "roll_no": "23EC011",
+    "department": "EC",
+    "email": "kavya.ec@charusat.edu.in",
+    "cgpa": 8.15
+  },
+  {
+    "id": 6,
+    "name": "Siddharth Dave",
+    "roll_no": "23ME008",
+    "department": "ME",
+    "email": "sid.me@charusat.edu.in",
+    "cgpa": 7.90
+  },
+  {
+    "id": 7,
+    "name": "Pooja Shah",
+    "roll_no": "23IT042",
+    "department": "IT",
+    "email": "pooja.it@charusat.edu.in",
+    "cgpa": 8.92
+  },
+  {
+    "id": 8,
+    "name": "Varun Verma",
+    "roll_no": "23CE055",
+    "department": "CE",
+    "email": "varun.ce@charusat.edu.in",
+    "cgpa": 8.35
+  }
+]

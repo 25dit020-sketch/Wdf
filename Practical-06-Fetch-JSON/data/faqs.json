@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "category": "Admission",
+    "question": "How can I register for StudentHub portal?",
+    "answer": "Click on the Register button in the navigation bar, fill in your university email and basic details, and verify your account."
+  },
+  {
+    "id": 2,
+    "category": "Events",
+    "question": "How do I register for technical events or workshops?",
+    "answer": "Navigate to the Events tab, select the event you wish to attend, and click on Register. You will receive an email confirmation."
+  },
+  {
+    "id": 3,
+    "category": "Technical",
+    "question": "What should I do if I forget my password?",
+    "answer": "Click on the Forgot Password link on the login screen. An OTP/reset link will be sent to your registered college email."
+  },
+  {
+    "id": 4,
+    "category": "Admission",
+    "question": "Are events open to students from other colleges?",
+    "answer": "Inter-college events such as Spandan and Hackathon are open to students from all approved universities."
+  },
+  {
+    "id": 5,
+    "category": "Events",
+    "question": "Can I cancel my event registration?",
+    "answer": "Yes, you can cancel your event registration from your Student Dashboard up to 24 hours before the event starts."
+  }
+]

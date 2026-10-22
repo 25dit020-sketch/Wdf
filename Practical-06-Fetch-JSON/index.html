@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 6 - Fetch API &amp; JSON Data | StudentHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudentHub - Dynamic Portal Data</h1>
+    <p>Loaded asynchronously via JavaScript Fetch API and JSON datasets</p>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="events">Campus Events</button>
+    <button class="tab-btn" data-tab="students">Student Directory</button>
+    <button class="tab-btn" data-tab="faqs">Portal FAQs</button>
+  </nav>
+
+  <main class="main-container">
+    
+    <!-- Filter and Search Controls -->
+    <div class="controls-bar">
+      <input type="text" id="searchInput" placeholder="Search by title, name, or keywords...">
+      <select id="categorySelect">
+        <option value="ALL">All Categories / Depts</option>
+      </select>
+    </div>
+
+    <!-- Status / Loading Indicator -->
+    <div id="statusMessage">Loading data...</div>
+
+    <!-- Dynamic Container for Cards / Items -->
+    <div id="dataContainer" class="cards-grid"></div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+      <button id="prevBtn" disabled>&laquo; Previous</button>
+      <span id="pageIndicator" class="page-indicator">Page 1 of 1</span>
+      <button id="nextBtn" disabled>Next &raquo;</button>
+    </div>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
